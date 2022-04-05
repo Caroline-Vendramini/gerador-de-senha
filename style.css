@@ -41,7 +41,7 @@ body{
 
 .button-cta{
     height: 40px;
-    background-color: #3EB72B;
+    background-color: #dd4d09;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
@@ -49,6 +49,15 @@ body{
     color: #FFF;
     font-weight: bold;
     font-size: 18px;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .title{
@@ -76,7 +85,7 @@ body{
 }
 
 .tooltip{
-    color:#FFF;
+    color:#FFA;
     position: relative;
     top: 20px;
     padding: 6px 8px;
@@ -85,4 +94,16 @@ body{
     font-size: 16px;
     border-radius: 6px;
     visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
 }
